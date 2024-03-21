@@ -34,8 +34,8 @@
   }
 
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
   }
 
   .logo {
