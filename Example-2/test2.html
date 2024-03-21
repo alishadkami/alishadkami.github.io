@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Bar with Logo and Footer</title>
+<!-- Include font awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  /* Reset default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Style for the navigation bar */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center; /* Align menu items to the center */
+    padding: 10px; /* Add some padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Style for the links inside the navigation bar */
+  .navbar a {
+    display: block; /* Display links as blocks */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; /* Increase font size */
+  }
+
+  /* Change background color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style for the logo */
+  .logo {
+    margin-top: 8px; /* Adjust margin for positioning */
+    margin-right: 20px; /* Add margin for spacing */
+    max-width: 100px; /* Limit the width of the logo */
+  }
+
+  /* Style for the company name */
+  .company-name {
+    color: white;
+    font-size: 20px;
+    margin-right: auto; /* Push it to the right */
+    margin-left: 20px; /* Add margin for spacing */
+  }
+
+section {
+  padding: 50px;
+  text-align: center; /* Center text horizontally */
+  margin: auto; /* Center section horizontally */
+  max-width: 1000px; /* Make sections wider */
+  height: 100vh; /* Make sections taller */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  flex-direction: column; /* Stack items vertically */
+  background-color: #f0f0f0; /* Default background color */
+  border: 1px solid black;
+  border-bottom: 2px solid #333; /* Add underline */
+}
+
+  /* Style for section titles */
+  section h2 {
+    margin-bottom: 20px; /* Add spacing between title and content */
+  }
+
+  /* Style for the footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Style for the social media icons */
+  .social-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    align-items: center;
+    margin-left: 20px; /* Add margin for spacing */
+  }
+
+  /* Style for the social media icon links */
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px; /* Add margin between icons */
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar">
+  <!-- Logo -->
+  <img src="your-logo.png" alt="Logo" class="logo">
+  
+  <!-- Company name -->
+  <div class="company-name">Your Company Name</div>
+
+  <!-- Menu items -->
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Home section -->
+<section id="home" style="background-color: #f0f0f0;">
+  <h2>Home</h2>
+  <p>Welcome to our website! We are delighted to have you here.</p>
+</section>
+
+<!-- About section -->
+<!-- <section id="about" style="background-color: #d9edf7;">
+  <h2>About Us</h2>
+  <p>Learn more about our company and what we do.</p>
+</section> -->
+
+<!-- Contact section -->
+<!-- <section id="contact" style="background-color: #dff0d8;">
+  <h2>Contact Us</h2>
+  <p>Get in touch with us for any inquiries or feedback.</p>
+</section> -->
+
+<!-- Footer -->
+<div class="footer">
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="#facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#instagram"><i class="fab fa-instagram"></i></a>
+    <!-- Add more social media icons as needed -->
+  </div>
+  <!-- Privacy Policy Link -->
+  <a href="#privacy-policy" class="privacy-policy">Privacy Policy</a>
+  <!-- Copyright Text -->
+  <p>&copy; 2024 Your Company. All rights reserved.</p>
+</div>
+
+<!-- Smooth scrolling script -->
+<!-- <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script> -->
+
+</body>
+</html>
