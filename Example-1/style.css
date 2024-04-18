@@ -45,12 +45,12 @@
   }
 
   /* Style for the company name */
-  .company-name {
+  /* .company-name {
     color: rgb(0, 0, 0);
     font-size: 40px;
-    margin-right: auto; /* Push it to the right */
-    margin-left: 10px; /* Add margin for spacing */
-  }
+    margin-right: center;
+    margin-left: 10px;
+  } */
 
   /* Style for the footer */
   .footer {
