@@ -39,15 +39,19 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #8dbdd3;
+    background-color: #005796;
     color: rgb(255, 255, 255);
 }
 .content-wrapper {
     flex: 1;
     margin: auto;
     width: 60%;
-    border: 1px solid rgb(165, 165, 165);
+    border: 0px solid rgb(165, 165, 165);
     padding: 20px;
+}
+.content-wrapper img{
+    width: 350px;
+    height: auto;
 }
 footer {
     background-color: #333;
