@@ -52,6 +52,7 @@ nav a:hover {
 .content-wrapper img{
     width: 350px;
     height: auto;
+    border-radius: 10px;
 }
 footer {
     background-color: #333;
@@ -63,3 +64,29 @@ footer {
 footer a{
     color: white;
 }
+.appstore-icon img{
+    width: 192px;
+    height: auto;
+}
+
+/* index fly tweety section*/
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    flex: 0 0 256px;
+    margin-right: 20px;
+  }
+
+  .text-container {
+    flex: 1;
+  }
+
+  .bottom-images {
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-top: 10px;
+  }
