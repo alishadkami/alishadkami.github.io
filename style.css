@@ -161,3 +161,45 @@ footer a{
         padding: 5px;
     }
   }
+
+  /* Add at the end of style.css */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  /* For index.html */
+  .main-content {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .bottom-images {
+    animation: fadeIn 0.7s ease-out 0.2s;
+    animation-fill-mode: backwards;
+  }
+
+  .appstore-icon {
+    animation: fadeIn 0.9s ease-out 0.4s;
+    animation-fill-mode: backwards;
+  }
+
+  /* For about.html */
+  .content-wrapper section {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  /* For contact.html */
+  .contact-form {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  /* For privacy-policy.html */
+  .privacy-content {
+    animation: fadeIn 0.5s ease-out;
+  }
