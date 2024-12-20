@@ -94,3 +94,70 @@ footer a{
   .bottom-image {
     flex: 0 0 calc(33.33% - 10px);
   }
+
+  /* Add these media queries at the end of your CSS */
+  @media screen and (max-width: 768px) {
+    .content-wrapper {
+        width: 90%;  /* Increase width on mobile */
+        padding: 10px;
+    }
+
+    nav {
+        padding: 10px 0;
+        font-size: 24px;  /* Smaller font size for mobile */
+    }
+
+    nav a {
+        margin: 0 10px;  /* Less spacing between nav items */
+        padding: 8px 16px;
+    }
+
+    /* For the game content in index.html */
+    .main-content {
+        flex-direction: column;  /* Stack items vertically on mobile */
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .bottom-images img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    /* For the contact form */
+    .contact-form {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 100%;  /* Full width button on mobile */
+    }
+
+    /* Header logo adjustment */
+    header img {
+        width: 150px;  /* Smaller logo on mobile */
+    }
+  }
+
+  /* For very small screens */
+  @media screen and (max-width: 480px) {
+    nav {
+        font-size: 20px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        padding: 6px 12px;
+    }
+
+    .content-wrapper {
+        width: 95%;
+        padding: 5px;
+    }
+  }
