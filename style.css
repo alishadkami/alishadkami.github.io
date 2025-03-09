@@ -17,21 +17,29 @@ body {
 header {
     background-color: #ffffff;
     color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,.2);
 }
 header img {
+    display: block;
     width: 200px;
     height: auto;
+    margin-bottom: 0;
+}
+header a {
+    text-decoration: none;
+    display: inline-block;
 }
 nav {
     background-color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 0;
     font-size: 30px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,.2);
 }
 nav a {
     background-color: #ffffff;
@@ -104,6 +112,16 @@ footer a{
     .content-wrapper {
         width: 90%;  /* Increase width on mobile */
         padding: 10px;
+    }
+
+    /* Header mobile styling - change to vertical layout */
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+    
+    header img {
+        margin-bottom: 15px;
     }
 
     nav {
